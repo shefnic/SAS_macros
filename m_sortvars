@@ -3,7 +3,7 @@
 *****************************************************************;
 
 
-%macro m_sortvars(lib=WORK, dset=, suffix=_SORTED, sort=, start=0, end=0);
+%macro sortvars(lib=WORK, dset=, suffix=_SORTED, sort=, start=0, end=0);
 
 %if not %sysfunc(exist(&lib..&dset.)) %then %do;
                 %put %str(ER)ROR: &lib..&dset does not exist;
@@ -96,5 +96,5 @@ proc datasets nolist lib=work;
 run;
 
 %endmac:
-%mend m_sortvars;
-%m_sortvars(dset=testdat);
+%mend sortvars;
+%sortvars(dset=testdat);
