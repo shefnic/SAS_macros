@@ -4,7 +4,7 @@ Here will be where I place macros I write that I think might be generally useful
 
 ### M_DISTINCTCOLVAR
 
-The macro creates a new dataset that includes the of each dataset the variables were found in, the name of all matched variables, and the distinct values stored within them. I've found this macro useful for searching clinical CDISC-compliant datasets where many variables are inter-related but differ by a prefix to the variable name.
+The macro creates a new dataset that includes the name of each dataset the variables were found in, the name of all matched variables, and the distinct values stored within them. I've found this macro useful for searching clinical CDISC-compliant datasets where many variables are inter-related but differ by a prefix to the variable name.
 
 ```
 %distinctcolvar(colvar=, lib=, exact=);
