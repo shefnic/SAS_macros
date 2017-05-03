@@ -97,4 +97,3 @@ run;
 
 %endmac:
 %mend sortvars;
-%sortvars(dset=testdat);
