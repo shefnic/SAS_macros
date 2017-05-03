@@ -100,4 +100,7 @@ quit;
 %endmac:
 %mend distinctcolvar;
 
+** Example **;
+/*
 %distinctcolvar(colvar=term, lib=sdtm, exact=n);
+*/
